@@ -10,7 +10,8 @@ import TheDate from './state/TheDate.js';
 import {Counter} from './state/Counter.js';
 import {HelloWorld} from './state-drills/Hello.js'
 import { Bomb } from './state-drills/Bomb';
-import {RouletteGun} from './state-drills/RouletteGun'
+import {RouletteGun} from './state-drills/RouletteGun';
+import {Tabs} from './state/Tabs.js';
 
 const firstTooltip = (
   <Tooltip color='hotpink' message='tooltip message'>
@@ -22,6 +23,15 @@ const secondTooltip = (
     officiis
   </Tooltip>
 )
+
+const tabsProp = [
+  { name: 'First tab',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.' },
+  { name: 'Second tab',
+    content: 'Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.' },
+  { name: 'Third tab',
+    content: 'Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.' },
+];
 
 function App() {
   
@@ -44,6 +54,7 @@ function App() {
       <HelloWorld></HelloWorld>
       <Bomb></Bomb>
       <RouletteGun />
+      <Tabs tabs={tabsProp} />
     </main>
   )
 }
