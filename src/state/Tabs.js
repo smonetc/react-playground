@@ -10,9 +10,9 @@ export class Tabs extends React.Component {
       };
 
     renderButtons() {
-        return this.props.tabs.map((tab, index) => (
+        return this.props.tabs.map((section, index) => (
           <button key={index} onClick={() => this.handleButtonClick(index)}>
-            {tab.name}
+            {section.name}
           </button>
         ))
       }

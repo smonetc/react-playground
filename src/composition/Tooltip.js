@@ -24,20 +24,20 @@ class TooltipClass extends React.Component {
       }
     }
 
-function Tooltip(props) {
-    return (
-      <span className='Tooltip'>
-        <span
-        className='Tooltip-content'
-        style={{ color: props.color }}
-        >
-          {props.children}
-        </span>
-        <div className='Tooltip-message'>
-          {props.message}
-        </div>
-      </span>
-    )
-  }
+// function Tooltip(props) {
+//     return (
+//       <span className='Tooltip'>
+//         <span
+//         className='Tooltip-content'
+//         style={{ color: props.color }}
+//         >
+//           {props.children}
+//         </span>
+//         <div className='Tooltip-message'>
+//           {props.message}
+//         </div>
+//       </span>
+//     )
+//   }
 
   export default TooltipClass;
